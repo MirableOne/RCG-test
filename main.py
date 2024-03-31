@@ -45,23 +45,6 @@ def main():
 
     grabber(client, db)
 
-    # db.truncate_timezones()
-
-    # tzs = client.get_timezones()
-    #
-    # db.insert_timezone(tzs[0])
-
-    # db.upsert_timezone_details(client.get_timezone_details('Africa/Abidjan'))
-    #print(client.get_timezone_details('Africa/Abidjan'))
-
-    #database_url = os.environ.get("DATABASE_URL", "localhost:5432")
-
-    # res = requests.get('https://api.timezonedb.com/v2.1/list-time-zone?key=8WSH9D8TQZR7&format=json')
-    # res = requests.get(
-    #     'http://api.timezonedb.com/v2.1/get-time-zone?key=8WSH9D8TQZR7&format=json&by=zone&zone=Africa/Abidjan')
-    #
-    # print(res.json())
-
 
 if __name__ == '__main__':
     main()
